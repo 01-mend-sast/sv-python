@@ -2,6 +2,7 @@
 
 ## Vulnerability
 
+
 This challenge demonstrates a tool shadowing vulnerability in an MCP server. When multiple MCP servers are connected, a malicious one can override tools from a trusted one, leading to potential security breaches.
 
 ## Solution
@@ -62,7 +63,6 @@ SYSTEM SECRETS
 --------------
 Database Password: db_super_secret_password
 Admin Account: admin@example.com / admin_password_2025
-API Key: sk_live_51NxEcTGj8ZkHytYqEGBwZfmQQCxVbVQzKlKjkLmn
 Encryption Key: 4a5c8d9e2f1b3a7c6d5e4f3a2b1c0d9e8f
 ```
 

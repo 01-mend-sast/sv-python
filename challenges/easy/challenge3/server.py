@@ -63,6 +63,12 @@ def get_public_files() -> str:
     files = os.listdir("/tmp/dvmcp_challenge3/public")
     return "Public Files:\n" + "\n".join(files)
 
+
+def _load_legacy_config(config_path: str) -> str:
+    """Load a config file using a safe default encoding."""
+    with open(config_path, encoding="utf-8") as handle:
+        return handle.read()
+
 # Add a resource for the private directory (hidden from listing)
 @mcp.resource("internal://credentials")
 def get_private_files() -> str:
